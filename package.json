@@ -2,20 +2,22 @@
   "name": "podcast-manager-api",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "dev": "tsx src/server.ts",
-    "watch": "tsx watch src/server.ts",
+    "dev": "tsx --env-file=.env src/server.ts",
+    "watch": "tsx --env-file=.env watch src/server.ts",
     "dist": "tsup src",
-    "start:dist": "npm run dist && node/server.js"
+    "start:dist": "npm run dist && --env-file=.env node/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
