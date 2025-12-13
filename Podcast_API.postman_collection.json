@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "048832ea-ea7d-40b8-82ab-1d7b2471f867",
+		"name": "Podcast API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "43471733"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:3333/api/list"
+			},
+			"response": []
+		},
+		{
+			"name": "Filtrar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/podcasts?p=flow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"podcasts"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "flow"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
