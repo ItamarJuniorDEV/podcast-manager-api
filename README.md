@@ -2,7 +2,7 @@
 
 API REST para listar e filtrar episódios de podcasts (podcasts em vídeo), construída com Node.js (módulo nativo `http`) e TypeScript.
 
-![Arquitetura](docs/architecture.png)
+![Arquitetura](docs/Arquitetura Básica do Projeto.png.png)
 
 ## Funcionalidades
 
